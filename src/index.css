@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.039);
+  padding: 4rem;
+  max-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2.5rem;
+  padding: 0 20rem;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 7rem;
+  padding: 0 2rem;
+  box-shadow: 0px 1.2rem 1.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+}
+
+.container h4 {
+  font-size: 3rem;
+  font-family: cursive;
+  font-weight: 600;
+}
+
+.container input {
+  border: none;
+  padding: 1.2rem 2.5rem;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.container input:focus {
+  box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.container p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.list {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  overflow: scroll;
+  padding: 0 12px;
+}
+
+.list .list-search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 10rem;
+  border-bottom: 1px solid black;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.list .list-search img {
+  height: 8rem;
+  border-radius: 10px;
+  /* box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4); */
+}
+
+.list-detail h3 {
+  font-size: 2rem;
+  color: black;
+  font-family: sans-serif;
+}
+
+.list-detail p {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.watch-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.watch-details h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.watched-title {
+  margin-top: 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.watched-title img {
+  height: 200px;
+}
+
+.watched-title h3 {
+  font-size: 2rem;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+.title-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title-detail p {
+  font-size: 1.8rem;
+}
+
+.watch-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.watched-detail button {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  margin: 50px auto 0px;
+  border: none;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.noti {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  border: 1px solid #888;
+  padding: 0rem 2rem;
+  width: 100%;
+}
+
+.details {
+  padding: 0px 4rem;
+}
+
+.details p {
+  font-size: 1.5rem;
+  font-family: cursive;
+  margin-top: 21px;
+}
+
+.leftArrow {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.movie-list {
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-lists {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.movie-lists img {
+  width: 30%;
+}
+
+.movie-lists p {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+
+.movie-watchedDetails {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.delete {
+  background-color: red;
+  color: #fff;
+  padding: 12px 12px;
+  border-radius: 50%;
+}
